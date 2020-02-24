@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4">
+                {{#each burgers}}
+                        {{#unless devoured}}
+                                {{burger_name}} 
+                                <button class="update">Devoured</button> 
+                            <br>
+                        {{/unless}}
+                {{/each}}
+
+        </div>
+        <div class="col-sm-4">
+
+              <img src="https://i.insider.com/5c420211b492cb5cdb1d88d4?width=1100&format=jpeg&auto=webp" alt="">
+        </div>
+        <div class="col-sm-4">
+
+            {{#each burgers}}
+                {{#if devoured}}
+                    {{burger_name}}
+                {{/if}}
+
+            {{/each}}
+         </div>
+    </div>
+</div>
